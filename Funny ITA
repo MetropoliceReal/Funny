@@ -1,0 +1,22 @@
+@echo off
+setlocal enabledelayedexpansion
+
+rem Definizione degli array di messaggi divertenti
+set messages[0]=Hai mai notato che il WiFi è più veloce quando non ci sono altre persone a casa?
+set messages[1]=Perché il computer è sempre affamato? Perché mangia i suoi bit!
+set messages[2]=Cosa dice un pixel solitario? Sono solo un puntino in un mondo virtuale.
+set messages[3]=Perché il programmatore ha scelto un'aranciata? Perché non sapeva come fare un clic con il mouse!
+set messages[4]=Cosa dice un floppy disk a un CD? Oh, sei così sottile e affascinante!
+set messages[5]=Perché il programmatore ha sempre freddo? Perché è sempre in modalità freeze!
+set messages[6]=Se un algoritmo fa qualcosa di stupido e nessuno lo vede, è davvero stupido?
+set messages[7]=Perché i pesci non possono usare i computer? Perché hanno problemi con la rete!
+set messages[8]=Cosa fa un bug in una tazza di caffè? Fa il debugging!
+set messages[9]=Perché il computer non va mai a letto? Perché ha troppi processi in esecuzione!
+
+rem Generazione di un numero casuale tra 0 e 9 per scegliere un messaggio
+set /a index=%random% %% 10
+
+rem Stampa del messaggio casuale
+echo %messages[%index%]%
+
+pause
